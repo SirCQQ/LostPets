@@ -1,18 +1,34 @@
 
 body{
     text-align: center;
-    width: 200;
-    background: url(background.jpg);
-    background-repeat: no-repeat;
+    background:lightblue;
+
 }
-.imgfrontPage{
-    width: 1200;
-    height:1000px;
+.button{
+    text-align: right;
+}
+.button button{
+    text-align: right;
+}
+.button h1{
+    text-align: left;
+}
+.container{
+    background:lightblue;
+}
+.sadDogimg{
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+.happyDogimg{
+    width: 500px;
+    height:300px;
+    border-radius: 25px;
 }
 button{
     color:black;
-    background-color: white;
+    background-color:wheat;
     padding: 14px 20px;
     font-size: 16px;
-    background-position: center; 
 }
