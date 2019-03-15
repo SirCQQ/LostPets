@@ -10,9 +10,6 @@ body{
 .button button{
     text-align: right;
 }
-.button h1{
-    text-align: left;
-}
 .container{
     background:lightblue;
 }
@@ -28,7 +25,17 @@ body{
 }
 button{
     color:black;
-    background-color:wheat;
+    background-color:whitesmoke;
     padding: 14px 20px;
     font-size: 16px;
+    border-radius: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+header{
+    text-align: center
+}
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
 }
