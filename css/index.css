@@ -1,0 +1,41 @@
+
+body{
+    text-align: center;
+    background:lightblue;
+
+}
+.button{
+    text-align: right;
+}
+.button button{
+    text-align: right;
+}
+.container{
+    background:lightblue;
+}
+.sadDogimg{
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+.happyDogimg{
+    width: 500px;
+    height:300px;
+    border-radius: 25px;
+}
+button{
+    color:black;
+    background-color:whitesmoke;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+header{
+    text-align: center
+}
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
