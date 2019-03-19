@@ -1,5 +1,5 @@
 #header{
-    position: relative;
+    position: sticky;
     top:0px;
     left: 0px;
     right: 0px;
@@ -29,6 +29,7 @@ border: 2px solid #a2c523;
 }
 
 #side{
+    /* font-size: 0%; */
     position: absolute;
     /* background-color: #fed330; */
     left:0px;
@@ -38,22 +39,26 @@ border: 2px solid #a2c523;
 .profile{
     position: relative;
 }
+
 .profile .profilePicture 
 {
     position: relative;
     margin-top:10px;
-    height:58px;
-    width: 58px;
+    height:35%;
+    width: 35%;
     border-radius: 51%;
-    left: 7%;
+    left: 5%;
 }
 .profile .profile-btn 
 {
     position: absolute;
-    height: 32px;
-    width: 100px;
+    height:auto;
+    width:auto;
+    min-width: 20px;
+    max-width: 120px;
     bottom: 25%;
-    left:40%;
+    left:40%;font-size:100%;
+    
 }
 
 .notification{
@@ -63,18 +68,22 @@ border: 2px solid #a2c523;
 {
     position: relative;
     margin-top:10px;
-    height:58px;
-    width: 58px;
+    height:35%;
+    width: 35%;
     border-radius: 51%;
-    left: 7%;
+    left: 5%;
 }
 .notification .notification-btn 
 {
     position: absolute;
-    height: 32px;
-    width: 100px;
+    height:auto;
+    width: auto;
+    min-width: 20px;
+    max-width: 120px;
     bottom: 25%;
     left:40%;
+    font-size:100%;
+
 }
 
 .settings{
@@ -84,18 +93,21 @@ border: 2px solid #a2c523;
 {
     position: relative;
     margin-top:10px;
-    height:58px;
-    width: 58px;
+    
+    height:35%;
+    width: 35%;
     border-radius: 51%;
-    left: 7%;
+    left: 5%;
 }
 .settings .settings-btn 
 {
     position: absolute;
-    height: 32px;
-    width: 100px;
+    height:auto;
+    width:auto;
+    min-width: 20px;
+    max-width: 120px;
     bottom: 25%;
-    left:40%;
+    left:40%;font-size:100%;
 }
 
 .add{
@@ -105,16 +117,69 @@ border: 2px solid #a2c523;
 {
     position: relative;
     margin-top:10px;
-    height:58px;
-    width: 58px;
+    height:35%;
+    width: 35%;
     border-radius: 51%;
-    left: 7%;
+    left: 5%;
 }
 .add .add-btn 
 {
     position: absolute;
-    height: 32px;
-    width: 100px;
+    height:auto;
+    width:auto;
+    min-width: 20px;
+    max-width: 120px;
     bottom: 25%;
-    left:40%;
+    left:40%;font-size:100%;
 }
+
+/* About the card  */
+.card {
+    position: relative;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    
+    left:20%;
+    /* background: black; */
+    display:inline-block;
+    height: 25%;
+    width: 25%;
+    /* background-color: darkgray; */
+    padding: 10px;
+    /* border: solid #a2c523 2px; */
+}
+
+/* 
+  #workspace{
+    
+}
+  */
+
+.ProfilePic{
+      position: relative;
+  border-radius: 50%;
+  height: 25% ;
+  width: 25%;
+  display: block;
+  transition:all  1s ;
+
+  }
+  .card{
+    
+  }
+  .container {
+      position:absolute;
+    padding: 2px 16px;
+    display: none;
+  }
+
+ 
+  /* .card :hover .container{
+      display: block;
+
+  } */
+  
+  .ProfilePic:hover{
+      border-radius: 0px;
+
+  }
+
