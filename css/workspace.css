@@ -97,3 +97,24 @@ border: 2px solid #a2c523;
     bottom: 25%;
     left:40%;
 }
+
+.add{
+    position: relative;
+}
+.add .addPicture 
+{
+    position: relative;
+    margin-top:10px;
+    height:58px;
+    width: 58px;
+    border-radius: 51%;
+    left: 7%;
+}
+.add .add-btn 
+{
+    position: absolute;
+    height: 32px;
+    width: 100px;
+    bottom: 25%;
+    left:40%;
+}
