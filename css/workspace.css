@@ -36,12 +36,7 @@ border: 2px solid #a2c523;
     height: 100%;
     width: 13%;
 }
-.profile{
-    position: relative;
-}
-
-.profile .profilePicture 
-{
+#side img {
     position: relative;
     margin-top:10px;
     height:35%;
@@ -49,8 +44,8 @@ border: 2px solid #a2c523;
     border-radius: 51%;
     left: 5%;
 }
-.profile .profile-btn 
-{
+
+#side button{
     position: absolute;
     height:auto;
     width:auto;
@@ -59,79 +54,29 @@ border: 2px solid #a2c523;
     bottom: 25%;
     left:40%;font-size:100%;
     
+}
+.profile{
+    position: relative;
 }
 
 .notification{
     position: relative;
 }
-.notification .notificationPicture 
-{
-    position: relative;
-    margin-top:10px;
-    height:35%;
-    width: 35%;
-    border-radius: 51%;
-    left: 5%;
-}
-.notification .notification-btn 
-{
-    position: absolute;
-    height:auto;
-    width: auto;
-    min-width: 20px;
-    max-width: 120px;
-    bottom: 25%;
-    left:40%;
-    font-size:100%;
-
-}
 
 .settings{
     position: relative;
-}
-.settings .settingsPicture 
-{
-    position: relative;
-    margin-top:10px;
-    
-    height:35%;
-    width: 35%;
-    border-radius: 51%;
-    left: 5%;
-}
-.settings .settings-btn 
-{
-    position: absolute;
-    height:auto;
-    width:auto;
-    min-width: 20px;
-    max-width: 120px;
-    bottom: 25%;
-    left:40%;font-size:100%;
 }
 
 .add{
     position: relative;
 }
-.add .addPicture 
-{
+
+.logout{
     position: relative;
-    margin-top:10px;
-    height:35%;
-    width: 35%;
-    border-radius: 51%;
-    left: 5%;
 }
-.add .add-btn 
-{
-    position: absolute;
-    height:auto;
-    width:auto;
-    min-width: 20px;
-    max-width: 120px;
-    bottom: 25%;
-    left:40%;font-size:100%;
-}
+
+
+
 
 /* About the card  */
 .card {
@@ -148,22 +93,26 @@ border: 2px solid #a2c523;
     /* border: solid #a2c523 2px; */
 }
 
-/* 
+
   #workspace{
-    
+ display: inline-block;   
 }
-  */
+ 
 
 .ProfilePic{
       position: relative;
   border-radius: 50%;
   height: 25% ;
   width: 25%;
-  display: block;
+  /* display: block; */
   transition:all  1s ;
 
   }
   .card{
+
+      position: relative;
+      width: 25%;
+      height: 45%;
     
   }
   .container {
@@ -177,9 +126,79 @@ border: 2px solid #a2c523;
       display: block;
 
   } */
-  
-  .ProfilePic:hover{
+  .ProfilePic:hover {
+    border-radius: 0px;}
+  .ProfilePic:hover + .container{
       border-radius: 0px;
-
+    display: block;
+    position: relative;
   }
 
+@media only screen  and (max-width:900px){
+body{
+/* background-color:blue; */
+}
+.card{
+    position: relative;
+    left:20%;
+    height: 45%;
+    width: 35%;
+}
+#side button{display: none;}
+#side img {
+    position: relative;
+    margin-top:10px;
+    height:60%;
+    width: 60%;
+    border-radius: 51%;
+    left: 20%;
+}
+
+.card .ProfilePic{
+position: static;
+border-radius: 50%;
+min-width: 50%;
+min-height:50% ;
+height: 50% ;
+width: 50%;
+display: block;
+transition:all  1s ;
+
+}
+.ProfilePic:hover {
+    border-radius: 0px;}
+}
+@media only screen  and (max-width:450px){
+    body{
+    /* background-color:blue; */
+    }
+    .card{
+        position: relative;
+        left:20%;
+        height: 90%;
+        width: 80%;
+    }
+    #side button{display: none;}
+    #side img {
+        position: relative;
+        margin-top:10px;
+        height:80%;
+        width: 80%;
+        border-radius: 51%;
+        left: 20%;
+    }
+    
+    .card .ProfilePic{
+    position: static;
+    border-radius: 50%;
+    min-width: 50%;
+    min-height:50% ;
+    height: 50% ;
+    width: 50%;
+    display: block;
+    transition:all  1s ;
+    
+    }
+    .ProfilePic:hover {
+        border-radius: 0px;}
+    }
