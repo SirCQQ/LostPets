@@ -1,0 +1,17 @@
+Using JWToken to secure access on the website;
+Create a JWToken on GET /login and set it in header of the request;
+It will have a 12 hour live time.
+It will be created with "HS256" algorithm
+    JWT=[
+        {
+            header{
+                "alg":"HS256",
+                "typ":"JWT"
+            }
+            payload{
+                    name:"Example Name"
+                    petId:{idExample}
+            }
+            secret:{personalSecret}
+        }
+    ]
