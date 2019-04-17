@@ -1,0 +1,51 @@
+#%RAML 1.0
+title: OpenStreepMap
+baseUri: https://www.openstreetmap.org
+version: v0.7
+
+uses: 
+  data/pets.raml
+
+traits: 
+    /locations
+    get:
+      description: get the location of all pets lost and found 
+      headers: 
+        keyForAcces: StringOfCharacters
+        body: 
+        responses: 
+            200: 
+                body:
+                    aplication/JSONResponse
+            404: 
+                body: Not Found/No entry in database
+            401:Unauthorized
+    /locations/{petId}
+    get:
+        description: get the location of a specific pet base on id
+        headers: 
+        body:  
+        responses:
+            200: 
+                body:
+                    aplication/JSONIdResponse  
+            401:Unauthorized
+    /addLostPets/{id}
+    post:
+        description: Add location for a pet
+        headers: 
+        body: 
+        responses:
+         200:
+            body: Location was added as "Lost at"
+         401:Unauthorized
+         403:Bad internet connection 
+    /addFoundedPet/{id}
+    post:
+        description: Add location where a pet was found
+        headers:  
+        body: 
+        responses: 
+            200: 
+                body: Location was added as "Find at"
+            
