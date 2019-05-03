@@ -1,0 +1,209 @@
+/* header {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    display: inline-flex;
+    background-color: #73CCBA;
+} */
+
+.logo {
+    height: 100px;
+}
+
+.login-form {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+.logout-form {
+   
+    position: fixed;
+    top:6%;
+    right: 10px;
+}
+
+.second {
+    margin: 10px;
+    position: relative;
+    top: 50%;
+    left: 85%;
+
+}
+.error{
+    position: relative;
+    text-align: center;
+    top:-75px;
+    /* right:10%; */
+    color:red;
+    font-size: 20px;
+}
+.success{
+    position: relative;
+    text-align: center;
+    top:-75px;
+
+    color:green;
+    font-size: 20px;
+}
+button {
+    border-radius: 12.5%;
+    background-color: #dde;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px 25px 25px 25px;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+    padding: 5px;
+    border: 2px solid #73CCBA;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.file {
+    height: 40px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.register-form {
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    right: 5%;
+    -webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	        animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+}
+.hiddenRegister{
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    right: 5%;
+    -webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+    animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+    
+}
+.hidden{
+    position: fixed;
+    top:-1000px;
+}
+.file2 {
+    height: 40px;
+}
+
+.show-me {
+    position: fixed;
+    top: 20%;
+}
+@media only screen and (max-width:900px)
+{
+    .logo{
+        display: none;
+    }
+    button {
+        border-radius: 12.5%;
+        background-color: #dde;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        border: 2px solid #ddd;
+        border-radius: 25px 25px 25px 25px;
+    }
+    
+    input {
+        height: 20px;
+        width: 250px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+ 
+        padding: 5px;
+        border: 2px solid #73CCBA;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .register-form {
+        text-align: center;
+        position: fixed;
+        top:40%;
+    }
+    .login-form {
+        position: fixed;
+        top: 20px;
+        right: 25%;
+    }
+}
+
+
+/* animatiiiiiii */
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-out-elliptic-top-bck {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out-elliptic-top-bck {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+  
+  
