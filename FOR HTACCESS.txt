@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^api/.+$ ./apiLostPets/rute.php [NC,L] 
+RewriteRule ^Statistici_Zone_Animale_pierdute_PDF ./includes/pdfCreator.php [NC,L] 
+RewriteRule ^Statistici_Zone_Animale_pierdute_HTML ./Files/StatisticiHTML.html [NC,L] 
