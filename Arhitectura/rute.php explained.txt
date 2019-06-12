@@ -1,0 +1,31 @@
+Rute.php
+
+
+GET-URI
+/getAllPets 
+returneaza toate animalele din baza de date 
+
+/lostAnimals returneaza doar animalele pierdute pentru notificari 
+
+/notification 
+returneaza toate notificarile din tabel din bd 
+
+/userPhoto 
+returneaza poza de profil bazata pe id-ul userului 
+
+/getInfoZone returneaza toate datele despre zone 
+nume,animale pierdute, animale gasite 
+
+
+POST-URI
+/login
+face login in 
+returneaza success sau eroare 
+
+/updateLocation 
+face update la locatie 
+
+/markAsFound
+marcheaza animalul ca fiind gasit ca sa nu mai fie afisat 
+
+

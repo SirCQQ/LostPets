@@ -1,0 +1,64 @@
+
+in full.js avem prima data niste declarari de variabile ca sa salvezi unele chestii global gen
+pets->animale 
+notificari-> de la sine 
+etc...
+
+getProfilePic() :
+    face un fetch la userPhoto si + id-ul userului curent si da return la numele pozei lui 
+    si o seteaza 
+
+getAllPets() 
+face fetch la /getAllPets si pe lune in variabila 
+nu face fecth si la lat si lon 
+
+getLostAnimals()
+face fetch la lat si lng de la fiecare animal prin /getLostPets
+
+getNotification()
+face fetch la /getNotification la notificatii
+
+onMapClickPutMarker()
+
+in functie de 3 conditii daca una din ele e indeplinita te lasa sa pui marker pe harta 
+la changeLocation markAsFound si formular pet 
+
+putMarkerAtPetPosition()
+pune marker la pozitia cursorului 
+e apelata in onMapClickPutMarker
+
+login()
+din nume face login cu fetch la /login 
+dupa raspuns face refresh 
+
+calculateIfThePointIsInTheCircle()
+calculeaza daca pozitia ta actuala are pe o raza de 2 km animale pierdute 
+
+createNotifications()
+creaza notificatii pe baza pozitiei tale si a animalelor pierdute care sunt in aria de 2km
+
+createPetCard()
+creaza un card pentru UN SINGUR animal
+
+updatePetsAndNotificationsAndLocation()
+contopeste mai multe functii in una ca sa fie un singur apel de funtie nu 3 
+
+createPetsCards()
+parcurge lista cu animale si apeleaza funtiea createPetCard pentru fiecare 
+
+found()
+fetch la /markAsFound ca sa marcheze animalul ca gasit iar la urmatoru fetch este inlaturat 
+
+changeLocation()
+face fetch la /changeLocation si schima cartierul si coordonatele ultimei locatii in care a fost vazut animalul
+
+clearMap()
+
+scoate toate markerele de pe harta 
+
+addMarker()
+
+Cand dai click pe un animal ii adauga locatia pe harta si schimba locatia pe care o vezi pe harta
+cu locatia animalul (zona in care a fost pierdut sau vazut ultima data )
+
+ultimele 3 sunt ca sa apeleze fetchurile la x ms 
